@@ -1,0 +1,276 @@
+body, html {
+    margin: 0px;
+    background-color: #C5C5C5;
+    cursor: default;
+    /* text-decoration-color: #AFFF60; */
+}
+
+@font-face {
+    font-family: derania;
+    src: url(../img/font/DeraniaDemo.otf);
+}
+
+h1 {
+    font-size: 36px;
+    /* font-weight: bold; */
+    line-height: 32px;
+    font-family: derania;
+    color: #AFFF60;
+    -webkit-text-stroke: 1.5px #061405;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 28px;
+    font-family: "Astloch", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    color: #061405;
+    /* -webkit-text-stroke: 0.7px #061405; */
+}
+
+h3, .anchor-h3 {
+    font-family: "Anaheim", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0px;
+    /* text-decoration: underline; */
+}
+
+p {
+    font-family: "Anaheim", sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+a {
+    font-family: "Astloch", system-ui;
+    font-weight: 700;    
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #061405;
+}
+
+a:hover {
+    color: #AFFF60;
+}
+
+header {
+    height: 120px;
+    background-color: #C5C5C5;
+    border-bottom: 3px solid #061405;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+footer {
+    background-color: #C5C5C5;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-flexbox img {
+    width: 100px;
+}
+
+#header-flexbox h1 {
+    position: relative;
+    top: 10px;
+    background-color: #C5C5C5;
+}
+
+#spacer {
+    height: 160px;
+    z-index: -1;
+}
+
+#spacerContact {
+    height: 120px;
+    z-index: -1;
+}
+
+
+.product img {
+    width: 100%;
+    display: block;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px ;
+    background-color: #C5C5C5;
+    border-bottom: 3px solid #061405;
+    border-top: 3px solid #061405;
+    height: 80px;
+}
+
+.buy-button {
+    /* color: #061405;
+    padding: 6px 4px 4px 6px;
+    border: 3px solid #AFFF60 ;
+    border-radius: 5px;
+    -webkit-text-stroke: 0px; */
+    padding: 5px 4px 4px 5px;
+    outline:2px solid #000000;
+    background:#C5C5C5;
+    border-width:2px;
+    border-style:solid;
+    border-color:#FFFFFF #808080 #808080;
+    position: relative;
+    /* left: 15px; */
+}
+
+.buy-button:active{
+    outline:none;
+}
+
+footer > * {
+    border-bottom: 3px solid #061405;
+    padding: 6px 10px 6px 10px;
+}
+
+#footer-description p{
+    margin: 0px;
+}
+
+#copyright {
+    height: 15px;
+}
+
+#location-instagram-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+#copyright {
+    border-bottom: 0px;
+}
+
+.big-dash {
+    font-size: 42px;
+}
+
+.price {
+    font-size: 32px;
+}
+
+#myLinks {
+    display: none;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    border-bottom: 3px solid #061405;
+    height: 52px;
+    position:fixed;
+    top: 120px;
+    width:100%;
+    background-color: #C5C5C5;
+    z-index: 500;
+
+}
+
+#logomark {
+    position: relative;
+    right:5%;
+}
+
+#logotype {
+    position: relative;
+    right:5%;
+}
+
+
+#header-flexbox a.icon {
+    /* background: black; */
+    -webkit-text-stroke: 2px #061405;
+    color: #AFFF60;
+    display: block;
+    font-size: 40px;
+    position: relative;
+    left:6%;
+    z-index: 200;
+
+  }
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 12px;
+    border-bottom: 3px solid #061405;
+    height: 160px;
+    position:fixed;
+    top:120px;
+    width:100%;
+    background-color: rgb(197, 197, 197);
+    padding-left: 10px;
+    z-index: 100;
+}
+
+#filter-text {
+    margin-top:12px
+}
+
+.slideshow-container {
+    position: relative;
+  }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 45%;
+  /* width: auto; */
+  padding: 8px;
+  /* margin-top: -22px; */
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+#contact-section {
+    border-bottom: 3px solid #061405;
+    padding: 10px;
+}
+
+#email {
+    max-width: 30%;
+    display: block;
+    margin: 30px auto 30px auto;
+    /* padding: 5px 4px 4px 5px; */
+    outline:2px solid #000000;
+    background:#C5C5C5;
+    border-width:2px;
+    border-style:solid;
+    border-color:#FFFFFF #808080 #808080;
+    position: relative;
+}
