@@ -3,7 +3,7 @@ function toggleFilter() {
     const children = Array.from(filter.children).slice(1);
 
     if (filter.style.height === '40px') {
-        filter.style.height = '160px';
+        filter.style.height = '175px';
         filter.firstElementChild.firstElementChild.innerHTML = "Filter -";
         children.forEach(child => {
             child.style.display = "block"
