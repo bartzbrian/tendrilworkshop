@@ -95,6 +95,27 @@ footer {
     background-color: #C5C5C5;
 }
 
+#logomark {
+    position: relative;
+    right:3%;
+}
+
+#logotype {
+    position: relative;
+    right:3%;
+}
+
+#header-flexbox a.icon {
+    /* background: black; */
+    -webkit-text-stroke: 2px #061405;
+    color: #AFFF60;
+    display: block;
+    font-size: 40px;
+    /* position: relative;
+    left:6%; */
+    z-index: 200;
+}
+
 #spacer {
     height: 160px;
     z-index: -1;
@@ -188,29 +209,6 @@ footer > * {
     z-index: 500;
 
 }
-
-#logomark {
-    position: relative;
-    right:5%;
-}
-
-#logotype {
-    position: relative;
-    right:5%;
-}
-
-
-#header-flexbox a.icon {
-    /* background: black; */
-    -webkit-text-stroke: 2px #061405;
-    color: #AFFF60;
-    display: block;
-    font-size: 40px;
-    position: relative;
-    left:6%;
-    z-index: 200;
-
-  }
 
 #filter {
     display: flex;
