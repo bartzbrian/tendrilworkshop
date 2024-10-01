@@ -160,8 +160,8 @@ footer {
     border-width:2px;
     border-style:solid;
     border-color:#FFFFFF #808080 #808080; */
-    position: relative;
-    left: 30px;
+    /* position: relative;
+    right: 7%; */
 }
 
 /* .buy-button:active{
@@ -169,8 +169,8 @@ footer {
 } */
 
 .price-section {
-    position: relative;
-    left:8%;
+    /* position: relative;
+    left:8%; */
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -189,25 +189,22 @@ footer {
     background-color:#C5C5C5;
     border: 3px #061405 solid;
     padding: 7px;
-    z-index: 399;
-
+    z-index: 500;
 }
 
 .close-button {
-    font-size: 30px;
+    font-size: 24px;
     display: block;
     margin-bottom: 15px;
     position: fixed;
-    width: 5%;
+    width: 3%;
     left:8%;
-    top: 35.55%;
+    top: 34%;
     text-align: center;
     background-color:#C5C5C5;
-    border-top: 3px #061405 solid;
-    border-right: 3px #061405 solid;
-    border-left: 3px #061405 solid;
-    padding: 7px;
-    z-index: 400;
+    border: 3px #061405 solid;
+    padding: 3px;
+    z-index: 500;
 }
 
 footer > * {
