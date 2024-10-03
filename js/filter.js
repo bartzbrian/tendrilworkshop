@@ -6,6 +6,7 @@ function toggleFilter() {
         console.log("toggled-filter");
         filter.style.height = '175px';
         filter.firstElementChild.firstElementChild.innerHTML = "Filter -";
+        // filter.firstElementChild.firstElementChild.style.borderBottom = "3px solid #061405";
         children.forEach(child => {
             child.style.display = "block"
         });

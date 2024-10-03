@@ -4,6 +4,7 @@ body, html {
     cursor: default;
     overflow-x: hidden;
     /* text-decoration-color: #AFFF60; */
+    overscroll-behavior: none;
 }
 
 @font-face {
@@ -12,7 +13,7 @@ body, html {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 30px;
     /* font-weight: bold; */
     line-height: 32px;
     font-family: derania;
@@ -78,11 +79,11 @@ header {
     z-index: 1000;
 }
 
-
 footer {
     background-color: #C5C5C5;
     display: flex;
     flex-direction: column;
+    z-index: 50;
 }
 
 #header-flexbox {
@@ -125,6 +126,7 @@ footer {
 #spacer {
     height: 160px;
     z-index: -1;
+    border-bottom: 3px solid #061405;
 }
 
 #spacerContact {
@@ -265,10 +267,11 @@ footer > * {
     /* justify-content: space-around; */
     gap: 12px;
     border-bottom: 3px solid #061405;
-    height: 160px;
+    border-right: 3px solid #061405;
+    height: 40px;
     position:fixed;
     top:120px;
-    width:100%;
+    width:35%;
     background-color: rgb(197, 197, 197);
     padding-left: 10px;
     z-index: 100;
@@ -345,6 +348,36 @@ footer > * {
     display: none;
 }
 
+#filter-background{
+    top:120px;
+    height: 40px;
+    background-color: #C5C5C5;
+    position: fixed;
+    border-bottom: 3px solid #061405;
+    width: 100%;
+    z-index:50;
+}
+
+.vertical-line {
+    display: none;
+}
+
+#contact-section img, #about-section img {
+    max-width: 120px;
+}
+
+/* #shopping-cart {
+    position: absolute;
+    top:35px;
+} */
+
+@media only screen and (min-width: 340px) {
+    h1 {
+        font-size: 36px;
+    }
+
+}
+
 /* tablet layout */
 @media only screen and (min-width: 450px) {
 
@@ -355,7 +388,7 @@ footer > * {
 
     footer {
         position: relative;
-        bottom:3px;
+        /* bottom:6px; */
         border-top: 3px solid #061405;
     }
 
@@ -420,7 +453,9 @@ footer > * {
         width: 10%;
     }
 
-
+    #filter {
+        width:24%;
+    }
     
     #header-flexbox a.icon {
         position: absolute;
@@ -428,6 +463,10 @@ footer > * {
         top: 30px;
         font-size: 64px;
 
+    }
+
+    #contact-section {
+        border-bottom: 0px;
     }
  
 }
@@ -440,6 +479,16 @@ footer > * {
     .price-section .big-dash {
         display: block;
     }
+    #filter {
+        width:20%;
+    }
+    #about-section {
+        width: 50%;
+        margin: 0px auto 20px auto;
+        border:3px solid #061405;
+        
+    }
+
 }
 
 /* laptop layout */
@@ -504,7 +553,7 @@ footer > * {
         gap: 42px;
         top:34px;
         position: absolute;
-        right: 4.5%;
+        right: 12%;
     }
 
     #desktop-nav a {
@@ -543,9 +592,44 @@ footer > * {
 
     footer > * {
         border-bottom: 3px solid #061405;
-        padding: 6px 2% 6px 2%;
+        padding: 6px 3% 6px 3%;
     }
 
+    #filter {
+        width:15.3%;
+    }
+
+    #filter-background{ 
+        top: 90px;
+        z-index: 60;
+    }
+
+    .vertical-line {
+        display: block;
+        width: 3px;
+        background-color: #061405;
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        z-index: 50;
+    }
+
+    #vert-line-one{
+        left: 3%;
+    }
+
+    #vert-line-two{
+        left: 16.25%;
+    }
+
+
+    #vert-line-three{
+        right: 3%;
+    }
+
+    #vert-line-four{
+        right: 16.25%;
+    }
 }
 
 /* XL display layout */

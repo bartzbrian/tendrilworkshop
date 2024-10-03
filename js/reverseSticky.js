@@ -35,10 +35,10 @@ window.addEventListener('scroll', function () {
         stickyElementTwo.style.position = 'fixed';
         stickyElementTwo.style.top = '20%'; // Fixed at 6% from the bottom of the viewport
     }
-    console.log(height);
-    console.log(offsetFromBottom);
-    console.log('Scroll Y:', window.scrollY);
-    console.log('Sticky Height:', stickyHeight);
-    console.log('Bottom Position:', stickyElementOneBottom);
-    console.log('Stop Point:', stopPoint);
+    // console.log(height);
+    // console.log(offsetFromBottom);
+    // console.log('Scroll Y:', window.scrollY);
+    // console.log('Sticky Height:', stickyHeight);
+    // console.log('Bottom Position:', stickyElementOneBottom);
+    // console.log('Stop Point:', stopPoint);
 });
