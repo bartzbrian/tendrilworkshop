@@ -57,8 +57,8 @@ p {
 a {
     font-family: "Astloch", system-ui;
     font-weight: 700;    
-    line-height: 24px;
-    font-size: 24px;
+    line-height: 20px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     color: #061405;
@@ -66,6 +66,7 @@ a {
 
 a:hover {
     color: #AFFF60;
+    cursor: pointer;
 }
 
 header {
@@ -115,7 +116,7 @@ footer {
     -webkit-text-stroke: 2px #061405;
     color: #AFFF60;
     display: block;
-    font-size: 40px;
+    font-size: 46px;
     /* position: relative;
     left:6%; */
     z-index: 200;
@@ -216,6 +217,10 @@ footer > * {
     margin: 0px;
 }
 
+#footer-logo {
+    display: none;
+}
+
 #copyright {
     height: 15px;
 }
@@ -302,6 +307,17 @@ footer > * {
 #contact-section {
     border-bottom: 3px solid #061405;
     padding: 10px;
+    text-align: center;
+}
+
+#about-section {
+    border-bottom: 3px solid #061405;
+    padding: 10px;
+    text-align: justify;
+}
+
+.centered-text {
+    text-align: center;
 }
 
 #email {
@@ -315,4 +331,223 @@ footer > * {
     border-style:solid;
     border-color:#FFFFFF #808080 #808080;
     position: relative;
+}
+
+#gif-bar-left, #gif-bar-right {
+    display: none;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#logotype-desktop {
+    display: none;
+}
+
+/* tablet layout */
+@media only screen and (min-width: 450px) {
+
+    a {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    footer {
+        position: relative;
+        bottom:3px;
+        border-top: 3px solid #061405;
+    }
+
+    #shop-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px; /* Space between grid cells to simulate an even border */
+    }
+
+    .product {
+        outline: 3px solid #061405;
+    }
+    .product-info{
+        border-bottom: 0px;
+    }
+
+    .anchor-h3{
+        font-size: 18px;
+    }
+
+    .price-section .big-dash {
+        display: none;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    #footer-logo {
+        display: block;
+        font-size: 20px;
+        line-height: 19px;
+    }
+
+    #instagram {
+        padding: 0px 18px 0px 18px;
+        /* border-left: 3px solid #061405;
+        border-right: 3px solid #061405; */
+    }
+
+    #location-instagram-logo-section {
+        height: 36px;
+    }
+
+    #logomark, #header-flexbox h1 {
+        position: absolute;
+    }
+
+    #logomark {
+        left:3%;
+
+    }
+    #header-flexbox img {
+        width: 110px;
+    }
+    
+    #logotype {
+        position: absolute;
+        left:calc(3% + 110px);
+        font-size: 42px;
+        line-height: 36px;
+        width: 10%;
+    }
+
+
+    
+    #header-flexbox a.icon {
+        position: absolute;
+        right:6%;
+        top: 30px;
+        font-size: 64px;
+
+    }
+ 
+}
+
+/* tablet layout */
+@media only screen and (min-width: 769px) {
+    .price {
+        font-size: 28px;
+    }
+    .price-section .big-dash {
+        display: block;
+    }
+}
+
+/* laptop layout */
+@media only screen and (min-width: 1024px) {
+
+    #shop-grid {
+        width: 60%;
+        margin: 0px auto 0px auto;
+    }
+    #gif-bar-left {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:20%;
+        left: 4.5%;
+        gap: 3.5rem;
+        /* border-left: #061405 3px solid;
+        border-right: #061405 3px solid; */
+    }
+    #gif-bar-left img {
+        max-width: 150px;
+    }
+    #gif-bar-right {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:20%;
+        right: 4.5%;
+        gap: 3.5rem;
+        /* border-left: #061405 3px solid;
+        border-right: #061405 3px solid; */
+    }
+    #gif-bar-right img {
+        max-width: 150px;
+    }
+    #filter {
+        padding-left: 4.5%;
+        top:90px;
+
+    }
+    .item-description h3{
+        width: 40%;
+        left:31%;
+    }
+    
+    .close-button {
+        left:31%;
+    }
+
+    #header-flexbox {
+        align-items: center;
+    }
+
+    #header-flexbox a.icon {
+        display: none;
+    }
+
+    #desktop-nav {
+        display: flex;
+        gap: 42px;
+        top:34px;
+        position: absolute;
+        right: 4.5%;
+    }
+
+    #desktop-nav a {
+        font-size: 32px;
+    }
+
+    #header-flexbox img {
+        max-width: 80px;
+    }
+
+    header {
+        height: 90px;
+    }
+
+    #logotype {
+        display: none;
+    }
+
+    #logotype-desktop {
+        display: block;
+        position: absolute;
+        margin: 0px;
+        left:calc(3% + 80px);
+        font-size: 42px;
+        line-height: 36px;
+        /* width: 30%; */
+    }
+
+    #header-flexbox h1 {
+        top: 33px;
+    }
+
+    #spacer {
+        height: 130px;
+    }
+
+    footer > * {
+        border-bottom: 3px solid #061405;
+        padding: 6px 2% 6px 2%;
+    }
+
+}
+
+/* XL display layout */
+@media only screen and (min-width: 1440px) {
 }
