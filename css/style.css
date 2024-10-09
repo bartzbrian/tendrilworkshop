@@ -314,7 +314,6 @@ footer > * {
 }
 
 #about-section {
-    border-bottom: 3px solid #061405;
     padding: 10px;
     text-align: justify;
 }
@@ -326,7 +325,7 @@ footer > * {
 #email {
     max-width: 30%;
     display: block;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 60px auto;
     /* padding: 5px 4px 4px 5px; */
     outline:2px solid #000000;
     background:#C5C5C5;
@@ -485,8 +484,16 @@ footer > * {
     #about-section {
         width: 50%;
         margin: 0px auto 20px auto;
-        border:3px solid #061405;
-        
+    }
+
+    #border-text {
+        border: 3px solid #061405;
+        padding: 6px;
+    }
+
+    #instagram {
+        position: relative;
+        right:25px;
     }
 
 }
@@ -558,6 +565,10 @@ footer > * {
 
     #desktop-nav a {
         font-size: 32px;
+    }
+
+    #about #desktop-nav, #contact #desktop-nav {
+        right:3%;
     }
 
     #header-flexbox img {
