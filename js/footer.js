@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     function adjustFooterPosition() {
-        const bodyHeight = document.body.scrollHeight;
-        const viewportHeight = window.innerHeight * 0.8;  // 80% of the viewport height
         const footer = document.querySelector('footer');
+        const bodyHeight = document.body.offsetHeight;
+        const viewportHeight = window.innerHeight;
 
         if (bodyHeight < viewportHeight) {
-            footer.style.position = 'absolute';
+            footer.style.position = 'fixed';
             footer.style.bottom = '0';
-            footer.style.width = '100%';  // Optional: Ensures the footer stretches across the full viewport width
+            footer.style.width = '100%';
         } else {
-            footer.style.position = 'relative';  // Reset footer position when content exceeds 80% of the viewport height
+            footer.style.position = 'relative';
         }
     }
 
-    // Run the function on load and on window resize
     adjustFooterPosition();
     window.addEventListener('resize', adjustFooterPosition);
 });

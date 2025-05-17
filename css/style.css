@@ -7,6 +7,64 @@ body, html {
     overscroll-behavior: none;
 }
 
+#garden-page, #garden-page-html {
+    background-color: #e8e8e8;
+}
+
+#garden-page #spacer {
+    border-bottom: none;
+
+}
+
+#garden-outer-flex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* height: 90vh; */
+}
+
+#garden-image-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto 20px auto;
+    width: 86%;
+}
+
+#garden-gif-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#garden-gif-flex img {
+    max-width: 130px;
+}
+
+#garden-text {
+    width: 80%;
+    margin: 0px auto 20px auto;
+    background-color: #C5C5C5;
+    padding: 15px;
+    border: 3px solid #061405;
+
+}
+
+#garden-text > p, #garden-text > ul {
+    text-align: justify;
+    font-size: 16px;
+}
+
+#garden-page #spacer {
+    height: 130px;
+}
+
+#tendril-pic {
+    width: 100%;
+    border: 3px solid #061405;
+}
+
+
 @font-face {
     font-family: derania;
     src: url(../img/font/DeraniaDemo.otf);
@@ -48,6 +106,14 @@ h3, .anchor-h3 {
 }
 
 p {
+    font-family: "Anaheim", sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+ul {
     font-family: "Anaheim", sans-serif;
     line-height: 16px;
     font-size: 14px;
@@ -344,7 +410,20 @@ footer > * {
     display: none;
 }
 
+#desktop-nav-garden {
+    display: block;
+    position: relative;
+    left:25%;
+}
+
+#desktop-nav-garden a {
+    font-size: 36px;
+}
+
 #logotype-desktop {
+    display: none;
+}
+#logotype-desktop-garden {
     display: none;
 }
 
@@ -376,6 +455,30 @@ footer > * {
     border: #061405 2.5px solid;
     border-radius: 6px;
 }
+
+#splash-flex-container {
+    display: flex;
+    background-color: #e8e8e8;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 15% auto 0px auto;
+    justify-content: space-between;
+    text-align: center;
+    border: #000000 4px solid;
+    border-radius: 1px;
+    padding: 10px 25px 10px 25px;
+}
+
+
+#splash-flex-container div:hover {
+    transform: scale(1.1);
+}
+
+.splash-img {
+    max-width: 200px;
+}
+
 
 @media only screen and (min-width: 340px) {
     h1 {
@@ -459,6 +562,14 @@ footer > * {
         width: 10%;
     }
 
+    #logotype-garden {
+        position: absolute;
+        left:10%;
+        font-size: 42px;
+        line-height: 36px;
+        width: 10%;
+    }
+
     #filter {
         width:24%;
     }
@@ -479,6 +590,10 @@ footer > * {
 
 /* tablet layout */
 @media only screen and (min-width: 769px) {
+
+    #splash-flex-container {
+        flex-direction: row;
+    }
     .price {
         font-size: 28px;
     }
@@ -507,6 +622,61 @@ footer > * {
 
 /* laptop layout */
 @media only screen and (min-width: 1024px) {
+
+    /* #garden-page img {
+        max-width: 300px;
+    }} */
+
+    #garden-outer-flex {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-around;
+        align-items:center;
+        /* height: 90vh; */
+    }
+
+    #garden-image-area {
+        width: auto;
+    }
+ 
+    #garden-gif-flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #garden-gif-flex img {
+        width: 150px;
+    }
+
+    #garden-text {
+        width: 40%;
+
+        background-color: #C5C5C5;
+        padding: 15px;
+        border: 3px solid #061405;
+
+    }
+
+    #garden-text > p, #garden-text > ul {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    #garden-page #spacer {
+        height: 130px;
+    }
+
+    #tendril-pic {
+        width: 500px;
+        border: 3px solid #061405;
+
+    }
+
+    #desktop-nav-garden {
+        left:40%;
+    }
 
     .ec-cart-widget {
         position: relative;
@@ -606,11 +776,25 @@ footer > * {
         display: none;
     }
 
+    #logotype-garden {
+        display: none;
+    }
+
     #logotype-desktop {
         display: block;
         position: absolute;
         margin: 0px;
         left:calc(3% + 80px);
+        font-size: 42px;
+        line-height: 36px;
+        /* width: 30%; */
+    }
+
+    #logotype-desktop-garden {
+        display: block;
+        position: absolute;
+        margin: 0px;
+        left:calc(10%);
         font-size: 42px;
         line-height: 36px;
         /* width: 30%; */

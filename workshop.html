@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&display=swap" rel="stylesheet">
+    <script src=js/mobilenav.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header id="header-flexbox">
+        <img id="logomark" src="img/GIF/logo-star.gif" alt="">
+        <h1 id="logotype">TENDRIL<br>WORKSHOP</h1>
+        <h1 id="logotype-desktop">TENDRIL WORKSHOP</h1>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerShop()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="desktop-nav">
+            <a id="home" href="index.html">Home</a>
+            <p class="big-dash">-</p>
+            <a id="shop" href="workshop.html">Shop</a>
+            <p class="big-dash">-</p>
+            <a id="contact" href="contact.html">Contact</a>
+            <p class="big-dash">-</p>
+            <a id="About" href="about.html">About</a>
+            <div class="ec-cart-widget"></div>
+            <div id="cart">
+                <script data-cfasync="false" type="text/javascript"
+                    src="https://app.ecwid.com/script.js?87198708&data_platform=code&data_date=2024-10-24"
+                    charset="utf-8"></script>
+                <script type="text/javascript">Ecwid.init();</script>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start mobile nav bar -->
+    <div id="spacer"></div>
+    <nav id="myLinks">
+        <!-- <p class="nav-dash">-</p> -->
+        <a id="shop" href="workshop.html">Shop</a>
+        <p class="big-dash">-</p>
+        <a id="contact" href="contact.html">Contact</a>
+        <p class="big-dash">-</p>
+        <a id="About" href="about.html">About</a>
+        <!-- <p class="nav-dash">-</p> -->
+    </nav>
+    <!-- end mobile nav bar -->
+
+    <!-- start filter -->
+    <div id="filter">
+        <a id="filter-text" onclick="toggleFilter()">
+            <h3>Filter +</h3>
+        </a>
+        <a onclick="showAll()">
+            <h3>All items</h3>
+        </a>
+        <a onclick="filterCategory('home-goods')">
+            <h3>Home goods</h3>
+        </a>
+        <a onclick="filterCategory('earrings')">
+            <h3>Earrings</h3>
+        </a>
+        <a onclick="filterCategory('charms')">
+            <h3>Charms</h3>
+        </a>
+    </div>
+    <div id="filter-background"></div>
+    <!-- end filter -->
+
+    <!-- start main shop section -->
+    <section id="shop-grid">
+        <!-- start product -->
+        <div class="product" data-category="charms">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides1">
+                    <img src="./img/aquilegia-charm/1.jpg">
+                </div>
+                <div class="mySlides1" style="display:none;">
+                    <img src="./img/aquilegia-charm/2.jpg">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a class="anchor-h3" onclick="toggleDescription(1)">Aquilegia<br>Chrysantha<br>charm</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $30 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-557517939"
+                        itemtype="http://schema.org/Product" data-single-product-id="557517939">
+                        <div class="ecsp-title" itemprop="name" style="display:none;"
+                            content="Aquilegia Chrysantha (Columbine flower)  charm"></div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product1" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(1)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Aquilegia Chrysantha (Columbine flower) charm in yellow resin. roughly 1.5" x 1.5 " x 1.5"
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="earrings">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides2">
+                    <img src="./img/green-tendril-earrings/1.png">
+                </div>
+                <div class="mySlides2" style="display:none;">
+                    <img src="./img/green-tendril-earrings/2.jpg">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a class="anchor-h3" onclick="toggleDescription(2)">Green<br>Tendril<br>earrings</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $40 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-558886639"
+                        itemtype="http://schema.org/Product" data-single-product-id="558886639">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Green Tendril Earrings">
+                        </div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product2" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(2)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Green Tendril earrings, printed with UV resin, semi-gloss finish. Translucent green acrylic chain
+                    loop, hypoallergenic sterling silver ear wire.
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="home-goods">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides3">
+                    <img src="./img/fennel-vase/first.png">
+                </div>
+                <div class="mySlides3">
+                    <img src="./img/fennel-vase/1.png">
+                </div>
+                <div class="mySlides3" style="display:none;">
+                    <img src="./img/fennel-vase/2.png">
+                </div>
+                <div class="mySlides3" style="display:none;">
+                    <img src="./img/fennel-vase/3.png">
+                </div>
+                <div class="mySlides3" style="display:none;">
+                    <img src="./img/fennel-vase/cross.gif">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(3)" class="anchor-h3">Fennel<br>Bulb<br>vase</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $300 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-699126845"
+                        itemtype="http://schema.org/Product" data-single-product-id="699126845">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Fennel Bulb Vase"></div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product3" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(3)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Fennel Bulb Vase. 3D printed and airbrushed PLA, with semi-gloss finish. 8" W x 5" L x 9" H. This
+                    piece
+                    has a 4-6 week lead time, as they are fully made to order.<br><br>
+
+                    *Note that this is not a traditional vase in the sense of it holding a volume of water inside.
+                    The
+                    stems insert into the fennel shafts, and then are fed into small vials of water held inside of
+                    the
+                    bulb's body. See product cross-section image for a visual description.
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="home-goods">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides4">
+                    <img src="./img/carrot-candle/1.png">
+                </div>
+                <div class="mySlides4">
+                    <img src="./img/carrot-candle/2.png">
+                </div>
+                <div class="mySlides4" style="display:none;">
+                    <img src="./img/carrot-candle/3.png">
+                </div>
+                <div class="mySlides4" style="display:none;">
+                    <img src="./img/carrot-candle/4.png">
+                </div>
+
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(4)" class="anchor-h3">Carrot<br>Candle<br>Holder</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $60 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-712516531"
+                        itemtype="http://schema.org/Product" data-single-product-id="712516531">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Carrot Candle Holder">
+                        </div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product4" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(4)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Carrot Candle Holder. 3D printed orange and green UV resin. ~2"W x 2"L x 6"H.<br><br>
+                    Note that because it is made of resin, it is inadvisable to let the open flame burn inside of the
+                    holder itself.
+                    Remove candlesticks before the flame enters the holder.
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="earrings">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides5">
+                    <img src="./img/maple-seed/1.png">
+                </div>
+                <div class="mySlides5" style="display:none;">
+                    <img src="./img/maple-seed/2.png">
+                </div>
+
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(5)" class="anchor-h3">Maple<br>Seed<br>Earrings</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $40 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-712516533"
+                        itemtype="http://schema.org/Product" data-single-product-id="712516533">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Maple Seed Earrings">
+                        </div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product5" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(5)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Maple seed earrings, printed with UV resin, semi-gloss finish, hypoallergenic sterling
+                    silver ear wire. Charms measure ~1.25" x 1.25"
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="home-goods">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides6" style="display:none;">
+                    <img src="./img/single-switch-plate/front.png">
+                </div>
+                <div class="mySlides6" style="display:none;">
+                    <img src="./img/single-switch-plate/side.png">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(6)" class="anchor-h3">Tendril<br>Switchplate<br>Cover</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $45 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-712488675"
+                        itemtype="http://schema.org/Product" data-single-product-id="712488675">
+                        <div class="ecsp-title" itemprop="name" style="display:none;"
+                            content="Tendril Switchplate Cover"></div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product6" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(6)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Green Tendril switchplate cover. Fits standard switches. Printed PLA airbrushed and finished in
+                    semi-gloss. ~5" x 3.25"
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="earrings">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides7" style="display:none;">
+                    <img src="./img/albino-rat/2.png">
+                </div>
+                <div class="mySlides7" style="display:none;">
+                    <img src="./img/albino-rat/1.png">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(7)" class="anchor-h3">Albino<br>Rat<br>Earring</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $40 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-712488676"
+                        itemtype="http://schema.org/Product" data-single-product-id="712488676">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Albino Rate Earrings">
+                        </div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product7" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(7)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Albino rat earrings. Printed in white UV resin, hand painted, hypoallergenic sterling silver ear
+                    wire.
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+        <!-- start product -->
+        <div class="product" data-category="home-goods">
+
+            <!-- start slideshow -->
+            <div class="slideshow-container">
+
+                <!-- each new product needs to have numbers changed here -->
+                <div class="mySlides8" style="display:none;">
+                    <img src="./img/asparagus/2.png">
+                </div>
+                <div class="mySlides8" style="display:none;">
+                    <img src="./img/asparagus/1.png">
+                </div>
+                <div class="mySlides8" style="display:none;">
+                    <img src="./img/asparagus/3.png">
+                </div>
+
+                <!-- each new product needs new number for second arg on plusSlides  -->
+                <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+            </div>
+            <!-- end slideshow -->
+
+            <!-- start product info -->
+            <div class="product-info">
+
+                <!-- start basic item description -->
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(8)" class="anchor-h3">Translucent<br>Asparagus<br>2 Pack</a>
+                <div class="price-section">
+                    <p class="big-dash">- </p>
+                    <h3 class="price"> $30 </h3>
+                    <p class="big-dash"> -</p>
+                </div>
+                <!-- end basic item description -->
+
+                <!-- start buy button embed code -->
+                <h2 class="buy-button">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-712517270"
+                        itemtype="http://schema.org/Product" data-single-product-id="712517270">
+                        <div class="ecsp-title" itemprop="name" style="display:none;" content="Translucent Asparagus">
+                        </div>
+                        <div customprop="addtobag"></div>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript"
+                        src="https://app.ecwid.com/script.js?87198708&data_platform=singleproduct_v2"
+                        charset="utf-8"></script>
+                    <script type="text/javascript">xProduct()</script>
+                </h2>
+                <!-- end buy button embed code -->
+
+            </div>
+            <!-- end product info -->
+
+            <!-- start extended description -->
+            <div id="product8" class="item-description">
+                <!-- each new product needs the toggleDescription arg updated -->
+                <a onclick="toggleDescription(8)" class="close-button anchor-h3">X</a>
+                <h3>
+                    Two Translucent Asparagus, 3D printed in green UV Resin. ~0.75" W X 7" H
+                </h3>
+            </div>
+            <!-- end extended description -->
+
+        </div>
+        <!-- end product -->
+
+
+        <div id="gif-bar-left">
+            <img src="img/GIF/sun.gif" alt="">
+            <img src="img/GIF/flower.gif" alt="">
+            <img src="img/GIF/logo-star.gif" alt="">
+        </div>
+
+        <div id="gif-bar-right">
+            <img src="img/GIF/sun.gif" alt="">
+            <img src="img/GIF/flower.gif" alt="">
+            <img src="img/GIF/logo-star.gif" alt="">
+        </div>
+
+    </section>
+    <!-- end main shop section -->
+
+    <div class="vertical-line" id="vert-line-one"></div>
+    <div class="vertical-line" id="vert-line-two"></div>
+    <div class="vertical-line" id="vert-line-three"></div>
+    <div class="vertical-line" id="vert-line-four"></div>
+
+    <!-- start footer -->
+    <footer id="footer">
+        <div id="footer-description">
+            <p>
+                All items are handmade by me, one at a time. I aim to fulfill orders within 2 weeks, unless otherwise
+                noted (some items have a longer lead time). Please feel free to reach out with questions, or to inquire
+                about
+                purchasing anything which is
+                sold out. <u>All sales are final</u>. Please MAKE SURE you have entered the correct address. Local
+                pickup
+                available in the Bay Area!! <br><br>I am open for custom work and commissions as well! Drop me a line..
+            </p>
+        </div>
+        <div id="location-instagram-logo-section">
+            <h3 id="berkeley"><a>Berkeley, CA</a></h3>
+            <h3 id="instagram"><a href="https://www.instagram.com/tendril.workshop/">Instagram</a></h3>
+            <h1 id="footer-logo">Tendril<br> Workshop</h1>
+        </div>
+        <div id="copyright">
+            <i>
+                <p>&copy; 2024 Tendril Workshop</p>
+            </i>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+
+    <script src=js/slideshow.js></script>
+    <script src=js/filter.js></script>
+    <script src=js/description.js></script>
+    <script src=js/reverseSticky.js></script>
+    <script src=js/cartshift.js></script>
+
+
+</body>
+
+
+</html>
